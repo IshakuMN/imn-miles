@@ -4,7 +4,6 @@ import { scrapeEncar } from './src/lib/scraper.js';
 async function setup() {
   try {
     console.log('Running initial scrape...');
-    process.env.NODE_ENV = 'development';
     await scrapeEncar();
     console.log('Initial setup complete.');
   } catch (e) {
